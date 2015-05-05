@@ -1,0 +1,20 @@
+body,
+header,
+footer,
+section.selector-1,
+section.selector-2,
+section.continue,
+section.canvas,
+section.steps,
+section.controls{
+  outline: 1px solid red;
+}
+
+.column-1,
+.column-2,
+.column-3,
+.column-4,
+.column-5{
+  outline: 1px solid blue;
+}
+

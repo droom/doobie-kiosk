@@ -1,0 +1,35 @@
+.tee-wrap{
+  width: 800px;
+  height: 1050px;
+  margin: auto;
+  position: relative;
+  border: 5px solid blue;
+}
+.shadow,
+.action{
+  width: 800px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.action{
+  z-index: 1;
+}
+
+
+
+
+.active{
+  border: 4px solid #333;
+  z-index: 10;
+}
+.column-1{
+  position: relative;
+}
+.text:after{
+  content: "text";
+  content: url(../img/text.png);
+  position: absolute;
+  top: 0;
+  right: 0;
+}

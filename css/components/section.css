@@ -1,0 +1,76 @@
+body{
+  margin: 0 auto;
+  /*background: url("../img/guide.png") no-repeat 50% 0;*/
+  height: 1920px;
+  width: 1080px;
+  background: lightgrey;
+  text-align: center;
+  position: relative;
+    /*position: absolute;*/
+
+    background: #a093a8; /* Old browsers */
+background: -moz-linear-gradient(45deg,  #a093a8 0%, #9ebfcc 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#a093a8), color-stop(100%,#9ebfcc)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(45deg,  #a093a8 0%,#9ebfcc 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(45deg,  #a093a8 0%,#9ebfcc 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(45deg,  #a093a8 0%,#9ebfcc 100%); /* IE10+ */
+background: linear-gradient(45deg,  #a093a8 0%,#9ebfcc 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a093a8', endColorstr='#9ebfcc',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+
+  /*overflow: hidden;*/
+
+
+}
+header{
+ height: 160px;
+}
+footer{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+
+
+section.canvas{
+  padding: 35px;
+  height: 1050px;
+  overflow: hidden;
+}
+section.continue{
+  position: absolute;
+  bottom: 40px;
+  left:calc(50% - 60px);
+}
+section.selector{
+  overflow: hidden;
+}
+section.steps{
+  height: 160px;
+}
+section.selector + section.selector{
+  margin-top: 20px;
+}
+section.controls{
+  overflow: hidden;
+  padding: 14px 0 ;
+}
+
+
+section.overlay{
+  height: 1920px;
+  width: 900px;
+  background: #333;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 30;
+  background-image:url("../img/overlay.png");
+  text-align: left;
+  color: white;
+
+}
+
+
+
