@@ -17,8 +17,18 @@
   background: white;
   padding: 15px 30px;
 }
+
 .step-active{
   /*background: red;*/
   /*opacity: 0.4*/
   /*outline: 2px solid yellow;*/
 }
+
+.text-ok:after{
+  content: "text";
+  content: url(../../img/text.png);
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+

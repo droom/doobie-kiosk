@@ -1,5 +1,4 @@
 body{
-  font-family: helvetica;
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -17,8 +16,15 @@ h5{
  text-transform: uppercase;
 }
 
-
 .steps a{
   text-decoration: none;
+  color: #333;
+  letter-spacing: 0.05em;
+}
+
+.ui.checkbox label,
+.ui.form .field>label{
+  color: white;
+  font-weight: 400;
 }
 

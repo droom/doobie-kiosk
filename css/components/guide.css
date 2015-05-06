@@ -9,7 +9,7 @@ section.steps,
 section.controls{
   outline: 1px solid red;
 }
-
+.tee-wrap,
 .column-1,
 .column-2,
 .column-3,
@@ -17,4 +17,3 @@ section.controls{
 .column-5{
   outline: 1px solid blue;
 }
-

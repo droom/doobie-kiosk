@@ -3,52 +3,104 @@
 <head>
 	<title>Doobie Kiosk</title>
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,800,700,600,300' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="dist/semantic.min.css">
   <link rel="stylesheet" href="css/application.css">
+
+
 </head>
 <body>
 
- <section class="overlay">
+ <section class="checkout">
+
   <header>
-    <div class="column-4"><h1>Select your size.</h1></div><div class="column-1"><img src="img/close.png"></div>
+    <div class="column-5"><h1>Checkout.</h1></div>
+    <a href="#" class="checkout-close"><img src="img/close.png"></a>
   </header>
-  <hr />
-  <form name="" method="" action="">
-    <fieldset>
+
+  <form class="ui form">
+    <div class="field column-2">
       <label>Size</label>
-      <select>
-        <option>Milk</option>
-        <option>Coffee</option>
-        <option>Tea</option>
-      </select>
+      <div class="ui selection dropdown">
+        <input type="hidden" name="gender">
+        <div class="default text">Default Size here</div>
+        <i class="dropdown icon"></i>
+        <div class="menu">
+          <div class="item" data-value="size-1">Size 1</div>
+          <div class="item" data-value="size-2">Size 2</div>
+          <div class="item" data-value="size-3">Size 3</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="field column-1">
       <label>QTY</label>
-      <select>
-        <option>Milk</option>
-        <option>Coffee</option>
-        <option>Tea</option>
+      <select class="ui search dropdown">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
       </select>
-      <h3>RM25.90</h3>
-      <button type="">+ Another Size</button>
-    </fieldset>
-    <fieldset>
-      <label for="name">Name*</label>
-      <input  type="text" name="name">
-      <label for="email">Email Address*</label>
-      <input  type="text" name="email">
-      <label for="telephone">Telephone Number</label>
-      <input  type="text" name="telephone">
-    </fieldset>
-    <h2>RM25.90</h2>
-    <fieldset>
-      <input type="checkbox" name="option1" value="Milk">Contact me <strong>via Email</strong><br>
-      <input type="checkbox" name="option1" value="Milk">Contact me via SMS<br>
-    </fieldset>
-    <button type="submit">Finish</button>
+    </div>
+
+    <div class="column-1">
+      <h3>RM30</h3>
+    </div>
+
+    <div class="column-5">
+      <div class="ui submit button">Add another size</div>
+    </div>
+
+    <div class="field column-3">
+      <label>Name</label>
+      <div class="field">
+        <input type="text" name="first-name" placeholder="Name">
+      </div>
+    </div>
+
+
+    <div class="field column-3">
+      <label>Email</label>
+      <div class="field">
+        <input type="email" name="email" placeholder="Email address">
+      </div>
+    </div>
+    <div class="field column-3">
+      <label>Telephone</label>
+      <div class="field">
+        <input type="text" name="telephone" placeholder="Telephone">
+      </div>
+    </div>
+
+    <hr />
+    <div class="field">
+      <div class="ui checkbox">
+        <input type="checkbox" name="hot-deals">
+        <label>Contact me via SMS.</label>
+      </div>
+    </div>
+    <div class="field">
+      <div class="ui checkbox">
+        <input type="checkbox" name="hot-deals">
+        <label>Contact me via email.</label>
+      </div>
+    </div>
+
+
+    <div class="ui error message">
+      <div class="header">We noticed some issues</div>
+    </div>
+
+
+    <div class="ui submit button">Add another size</div>
   </form>
 </section>
 
-<header>
-  <div class="column-1"><img src="img/help.png" /></div><!--
-  --><div class="column-4"><h1>Select your size.</h1></div><!--
+
+
+<header><!--
+--><div class="column-1"><img src="img/help.png" /></div><!--
+--><div class="column-4"><h1>Select your size.</h1></div><!--
 --><div class="column-1"></div>
 </header>
 
@@ -60,45 +112,45 @@
 </section>
 
 <section class="steps">
-  <section class="column-4">
-    <div class="column-1"><a href="#" class="change-step-1"><img class="svg-step" src="svg/step1.svg"><h5 class="copy-step">Select Size</h5></a></div>
-    <div class="column-1"><a href="#" class="change-step-2"><img class="svg-step" src="svg/step2.svg"><h5 class="copy-step">Edit Front</h5></a></div>
-    <div class="column-1"><a href="#" class="change-step-3"><img class="svg-step" src="svg/step3.svg"><h5 class="copy-step">Edit Back</h5></a></div>
-    <div class="column-1"><a href="#" class="change-step-4"><img class="svg-step" src="svg/step4.svg"><h5 class="copy-step">Checkout</h5></a></sdiv>
-    </section>
-    <section class="column-4">
-      <div class="column-1"><a href="#"><img src="img/icon-0.png"></a></div>
-      <div class="column-1 "><a href="#"><img src="img/icon-1.png"></a></div>
-      <div class="column-1"><a href="#"><img src="img/icon-2.png"></a></div>
-      <div class="column-1"></div>
-    </section>
+  <section class="column-4"><!--
+  --><div class="column-1"><a href="#" class="change-step-1"><img class="svg-step" src="svg/step1.svg"><h5 class="copy-step">Select Size</h5></a></div><!--
+  --><div class="column-1"><a href="#" class="change-step-2"><img class="svg-step" src="svg/step2.svg"><h5 class="copy-step">Edit Front</h5></a></div><!--
+  --><div class="column-1"><a href="#" class="change-step-3"><img class="svg-step" src="svg/step3.svg"><h5 class="copy-step">Edit Back</h5></a></div><!--
+  --><div class="column-1"><a href="#" class="change-step-4"><img class="svg-step" src="svg/step4.svg"><h5 class="copy-step">Checkout</h5></a></div>
+</section>
+<hr />
+<section class="column-4">
+<div class="column-1"><a href="#"><img src="img/icon-0.png"></a></div><!--
+--><div class="column-1 "><a href="#"><img src="img/icon-1.png"></a></div><!--
+--><div class="column-1"><a href="#"><img src="img/icon-2.png"></a></div><!--
+--><div class="column-1"></div>
+</section>
+</section>
+
+<section class="controls">
+  <!-- <section class="selector-active"></section> -->
+  <section class="selector-options">
+    <div class="column-1"><img src="img/illy-0.png" /></div><div class="column-1"><img src="img/illy-1.png" /></div><div class="column-1 text-ok"><img src="img/illy-2.png"></div><div class="column-1"><img src="img/illy-3.png"></div><div class="column-1"><img src="img/illy-4.png"></div><div class="column-1"><img src="img/illy-0.png"></div>
   </section>
 
-  <section class="controls">
-    <!-- <section class="selector-active"></section> -->
-    <section class="selector-options">
-      <div class="column-1"><img src="img/illy-0.png" /></div><div class="column-1"><img src="img/illy-1.png" /></div><div class="column-1 text"><img src="img/illy-2.png"></div><div class="column-1"><img src="img/illy-3.png"></div><div class="column-1"><img src="img/illy-4.png"></div><div class="column-1"><img src="img/illy-0.png"></div>
-    </section>
-
-    <section class="selector">
-      <img src="img/textures.png">
-    </section>
-
-
-    <section class="continue">
-      <!-- <img src="img/next.png" /> -->
-      <a href="#" class="btn-large">Next</a>
-    </section>
-
+  <section class="selector">
+    <img src="img/textures.png">
   </section>
 
-  <section class="guide"><div class="column-1"></div><div class="column-1"></div><div class="column-1"></div><div class="column-1"></div><div class="column-1"></div><div class="column-1"></div></section>
+  <section class="continue">
+    <a href="#" class="btn-large">Next</a>
+  </section>
+
+</section>
+
+<section class="guide"><div class="column-1"></div><div class="column-1"></div><div class="column-1"></div><div class="column-1"></div><div class="column-1"></div><div class="column-1"></div></section>
 
 
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="dist/semantic.min.js"></script>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-  <script src="js/kiosk.js"></script>
+<script src="js/kiosk.js"></script>
 
 
 </body>

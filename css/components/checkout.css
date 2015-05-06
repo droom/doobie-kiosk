@@ -1,0 +1,23 @@
+section.checkout{
+  height: 1920px;
+  width: 900px;
+  background: #333;
+  text-align: left;
+  color: white;
+  padding: 0 40px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 30;
+  transition: 1s all ease;
+  display: none;
+}
+
+.checkout.show{
+  display: block;
+}
+.checkout-close{
+  top: 50px;
+  right: 50px;
+  position: absolute;
+}
