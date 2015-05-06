@@ -12,3 +12,13 @@
     border: none;
     display: block;
   }
+
+.btn-large{
+  background: white;
+  padding: 15px 30px;
+}
+.step-active{
+  /*background: red;*/
+  /*opacity: 0.4*/
+  /*outline: 2px solid yellow;*/
+}

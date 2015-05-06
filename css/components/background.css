@@ -3,15 +3,10 @@
   top: 0;
   z-index: -4;
 }
-
 .guide .column-1{
   height: 1920px;
+  transition: background-color 300ms ease;
 }
-
-
-
-
 .guide .column-1:nth-child(2){
-  background-color: #999;
-  /*background-opacity: 0.1;*/
+  background-color: rgba(0, 0, 0, 0.1);
 }
