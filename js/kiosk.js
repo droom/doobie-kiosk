@@ -7,49 +7,26 @@ $( document ).ready(function() {
     e.preventDefault();
   } );
 
-  // DRY THIS OUT!
-
   function backgroundReset(){
-    $(".guide .column-1:nth-child(2)").css("background-color", bgOff);
-    $(".guide .column-1:nth-child(3)").css("background-color", bgOff);
-    $(".guide .column-1:nth-child(4)").css("background-color", bgOff);
-    $(".guide .column-1:nth-child(5)").css("background-color", bgOff);
+    $(".guide > .background-cell").css("background-color", bgOff);
   };
 
-  $('.change-step-1').click(function() {
+  $('.change-step').click(function() {
+    var step = parseInt($(this).data('step')) + 1;
     backgroundReset();
-    $(".guide .column-1:nth-child(2)").css("background-color", bgOn);
-  });
 
+    $(".guide .column-1:nth-child(" + step + ")").css("background-color", bgOn);
 
-  $('.change-step-2').click(function() {
-    backgroundReset();
-    $(".guide .column-1:nth-child(3)").css("background-color", bgOn);
-  });
-
-  $('.change-step-3').click(function() {
-    backgroundReset();
-    $(".guide .column-1:nth-child(4)").css("background-color", bgOn);
-    $(this).addClass('step-active');
-
-  });
-
-  $('.change-step-4').click(function() {
-    backgroundReset();
-    $(".guide .column-1:nth-child(5)").css("background-color", bgOn);
-    $(".checkout").addClass('show');
-
+    if (step == 4) {
+      $(this).addClass('step-active');
+    } else if (step == 5) {
+      $(".checkout").addClass('show');
+    }
   });
 
   $('.checkout-close').click(function() {
     $(".checkout").removeClass('show');
   });
 
-
-
-
-
-
+  $('.ui.dropdown').dropdown();
 });
-
-

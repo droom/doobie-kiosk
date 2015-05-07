@@ -3,7 +3,7 @@
 <head>
 	<title>Doobie Kiosk</title>
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,800,700,600,300' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="dist/semantic.min.css">
+  <link rel="stylesheet" href="css/semantic.min.css">
   <link rel="stylesheet" href="css/application.css">
 
 
@@ -113,12 +113,13 @@
 
 <section class="steps">
   <section class="column-4"><!--
-  --><div class="column-1"><a href="#" class="change-step-1"><img class="svg-step" src="svg/step1.svg"><h5 class="copy-step">Select Size</h5></a></div><!--
-  --><div class="column-1"><a href="#" class="change-step-2"><img class="svg-step" src="svg/step2.svg"><h5 class="copy-step">Edit Front</h5></a></div><!--
-  --><div class="column-1"><a href="#" class="change-step-3"><img class="svg-step" src="svg/step3.svg"><h5 class="copy-step">Edit Back</h5></a></div><!--
-  --><div class="column-1"><a href="#" class="change-step-4"><img class="svg-step" src="svg/step4.svg"><h5 class="copy-step">Checkout</h5></a></div>
+  --><div class="column-1"><a href="#" class="change-step" data-step=1><img class="svg-step" src="svg/step1.svg"><h5 class="copy-step">Select Size</h5></a></div><!--
+  --><div class="column-1"><a href="#" class="change-step" data-step=2><img class="svg-step" src="svg/step2.svg"><h5 class="copy-step">Edit Front</h5></a></div><!--
+  --><div class="column-1"><a href="#" class="change-step" data-step=3><img class="svg-step" src="svg/step3.svg"><h5 class="copy-step">Edit Back</h5></a></div><!--
+--><div class="column-1"><a href="#" class="change-step" data-step=4><img class="svg-step" src="svg/step4.svg"><h5 class="copy-step">Checkout</h5></a></div>
 </section>
 <hr />
+
 <section class="column-4">
 <div class="column-1"><a href="#"><img src="img/icon-0.png"></a></div><!--
 --><div class="column-1 "><a href="#"><img src="img/icon-1.png"></a></div><!--
@@ -138,17 +139,26 @@
   </section>
 
   <section class="continue">
+    <!-- <img src="img/next.png"> -->
     <a href="#" class="btn-large">Next</a>
   </section>
 
 </section>
 
-<section class="guide"><div class="column-1"></div><div class="column-1"></div><div class="column-1"></div><div class="column-1"></div><div class="column-1"></div><div class="column-1"></div></section>
+<section class="guide"><!--
+--><div class="column-1 background-cell"></div><!--
+--><div class="column-1 background-cell"></div><!--
+--><div class="column-1 background-cell"></div><!--
+--><div class="column-1 background-cell"></div><!--
+--><div class="column-1 background-cell"></div><!--
+--><div class="column-1 background-cell"></div>
+</section>
 
 
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-<script src="dist/semantic.min.js"></script>
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> -->
+<script src="js/jquery.js"></script>
+<script src="js/semantic.min.js"></script>
 
 <script src="js/kiosk.js"></script>
 

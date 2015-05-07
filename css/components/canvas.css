@@ -13,7 +13,12 @@
 }
 .action{
   z-index: 1;
+  transition: all 800ms ease-out;
 }
-/*.column-1{
-  position: relative;
-}*/
+
+/*.action:hover{
+  transform: rotateY(180deg);
+}
+.shadow{
+  opacity: 0;
+*/}

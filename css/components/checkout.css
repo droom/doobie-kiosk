@@ -21,3 +21,9 @@ section.checkout{
   right: 50px;
   position: absolute;
 }
+
+.checkout .column-1,
+.checkout .column-2,
+.checkout .column-3{
+  padding:20px 0;
+}
