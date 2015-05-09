@@ -1,0 +1,77 @@
+.tooltips{
+  position: absolute;
+  pointer-events: none;
+  top: 650px;
+  left: 180px;
+  z-index: 4;
+  /*visibility: hidden;*/
+  /*background: yellow;*/
+}
+
+/*.tooltips.show{*/
+  /*visibility: visible;*/
+  /*}*/
+
+
+  .tooltips .column-1{
+    opacity: 0.6;
+    vertical-align: top;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    background-color: red;
+    height: auto;
+    vertical-align: bottom;
+    /*transform-style: preserve-3d;*/
+    transform-style: preserve-3d;
+    transition: all 400ms ease;
+    transform: rotateY(90deg);
+  }
+
+
+  .tooltips .column-1.show{
+    /*visibility: visible;*/
+    transform: rotateY(0deg);
+  }
+
+  .tooltips .column-1:after
+  {
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: 70px;
+    bottom: -18px;
+    border: 20px solid;
+    border-color:  transparent red red transparent ;
+
+    -ms-transform: rotate(45deg); /* IE 9 */
+    -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+    transform: rotate(45deg);
+  }
+
+  .tooltips .column-1:hover{
+    background: blue;
+    /*transform: rotateY(180deg);*/
+    /*-webkit-transform: rotateY(180deg);*/
+  }
+
+  .tooltips .column-1:nth-child(1){
+    /*top: -100px;*/
+    transition-delay: 100ms;
+  }
+
+  .tooltips .column-1:nth-child(2){
+    /*top: -200px;*/
+    transition-delay: 200ms;
+  }
+
+  .tooltips .column-1:nth-child(3){
+    /*top: -300px;*/
+    transition-delay: 300ms;
+  }
+
+  .tooltips .column-1:nth-child(4){
+    /*top: -400px;*/
+    transition-delay: 400ms;
+  }

@@ -3,28 +3,22 @@
 .column-3,
 .column-4,
 .column-5{
-  /*font-size: 0;*/
   display: inline-block;
   min-height: 1px;
   position : relative;
 }
-
 .column-1{
   width: 180px;
 }
-
 .column-2{
   width: 360px;
 }
-
 .column-3{
   width: 540px;
 }
-
 .column-4{
   width: 720px;
 }
-
 .column-5{
   width: 900px;
 }
