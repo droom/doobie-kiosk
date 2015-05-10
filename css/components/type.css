@@ -1,34 +1,30 @@
-body{
-  font-family: 'Open Sans', sans-serif;
-}
-
 h1{
   padding: 50px 0;
   margin: 0;
   font-size: 38px;
-  font-weight: 700;
 }
-
 h5{
  font-size: 12px;
  margin: 10px 0 30px 0;
  padding: 0;
  text-transform: uppercase;
 }
-
+hr{
+  height: 2px;
+  background: #333;
+  border: 0;
+}
 .steps a{
   text-decoration: none;
   color: #333;
   letter-spacing: 0.05em;
 }
-
 .btn-large{
   text-transform: uppercase;
   letter-spacing: 0.1em;
   font-weight: 600;
   font-size: 16px;
 }
-
 .ui.checkbox label,
 .ui.form .field>label{
   color: white;

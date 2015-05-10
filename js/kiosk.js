@@ -1,4 +1,4 @@
-$( document ).ready(function() {
+$(document).ready(function() {
 
   var bgOn = "rgba(0, 0, 0, 0.1";
     var bgOff = "rgba(0, 0, 0, 0";
@@ -20,37 +20,32 @@ $( document ).ready(function() {
 
         if (step == 4) {
           $(this).addClass('step-active');
+
         } else if (step == 5) {
-          $(".checkout").addClass('show');
+          $(".checkout-wrap").addClass('show');
+          $('body').scrollTop(0);
         }
       });
 
       $('.checkout-close').click(function() {
-        $(".checkout").removeClass('show');
+        $(".checkout-wrap").removeClass('show');
       });
 
       $('.ui.dropdown').dropdown();
-
-
       $('.help').click(function(){
         console.log($(this).data('help'));
-
         var helpme = $(this).data('help');
 
         if (helpme === false){
           console.log("Show tooltips");
           $(this).data('help', true);
-
-                  // $(this).removeClass('hide');
-                  $('.tooltips .column-1').addClass('show');
-
+          $('.tooltips .column-1').addClass('show');
 
         } else{
           console.log("Hide tooltips");
           $(this).data('help', false);
 
-                 $('.tooltips .column-1').removeClass('show');
-                  // $(this).removeClass('show');
+          $('.tooltips .column-1').removeClass('show');
 
         }
 
