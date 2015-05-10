@@ -4,26 +4,101 @@ section.checkout{
   background: #333;
   text-align: left;
   color: white;
-  padding: 0 40px;
   position: absolute;
   top: 0;
-  right: 0;
-  z-index: 30;
-  transition: 1s all ease;
-  display: none;
+  right: 0px;
+  z-index: 10;
+}
+.checkout-wrap{
+ margin: 0 auto;
+ height: 1920px;
+ top: 0;
+ right: 0;
+ transition: 300ms all ease-out;
+ width: 0;
+ position: absolute;
+ overflow: hidden;
+}
+.checkout-wrap.show{
+ width: 900px;
 }
 
-.checkout.show{
-  display: block;
-}
+
+
 .checkout-close{
   top: 50px;
   right: 50px;
   position: absolute;
 }
+.checkout-wrap .checkout-close{
+  transform: rotate(90deg);
+  transition: 300ms all ease-out;
+}
+.checkout-wrap.show .checkout-close{
+  transform: rotate(0deg);
+}
+
+
 
 .checkout .column-1,
 .checkout .column-2,
 .checkout .column-3{
-  padding:20px 0;
+  padding: 10px;
 }
+.checkout .column-5{
+  padding: 0 65px;
+}
+.checkout hr{
+  background: white;
+  height: 1px;
+}
+.checkout h3{
+  color: white;
+}
+.checkout label{
+  text-transform: uppercase;
+}
+table{
+  width: 100%;
+  margin-top: 30px;
+}
+table, td{
+}
+td{
+  padding: 10px 20px 10px 0 ;
+}
+td label{
+  color: white;
+}
+
+td h1,
+td h2,
+td h3,
+td h4{
+  color: white;
+}
+
+label + .field{
+  padding-top: 10px;
+}
+
+.ui.form input:not([type]),
+.ui.form input[type=number],
+.ui.form input[type=text],
+.ui.form input[type=email],
+.ui.form input[type=search],
+.ui.form input[type=password],
+.ui.form input[type=date],
+.ui.form input[type=datetime-local],
+.ui.form input[type=tel],
+.ui.form input[type=time],
+.ui.form input[type=url]{
+}
+
+
+
+
+
+
+
+
