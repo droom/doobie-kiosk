@@ -16,8 +16,6 @@ body{
  background: linear-gradient(45deg,  #a093a8 0%,#9ebfcc 100%);
  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a093a8', endColorstr='#9ebfcc',GradientType=1 );
 }
-
-
 header{
  height: 160px;
 }

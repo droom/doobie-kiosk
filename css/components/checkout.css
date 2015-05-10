@@ -23,8 +23,6 @@ section.checkout{
  width: 900px;
 }
 
-
-
 .checkout-close{
   top: 50px;
   right: 50px;
@@ -37,8 +35,6 @@ section.checkout{
 .checkout-wrap.show .checkout-close{
   transform: rotate(0deg);
 }
-
-
 
 .checkout .column-1,
 .checkout .column-2,

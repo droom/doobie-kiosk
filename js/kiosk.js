@@ -5,23 +5,28 @@ $(document).ready(function() {
 
       $( 'a[href="#"]' ).click( function(e) {
         e.preventDefault();
-      }
-      );
+      });
 
       function backgroundReset(){
         $(".guide > .background-cell").css("background-color", bgOff);
+        $(".svg-step").css("fill", "#333333");
+        $(".copy-step").css("color", "#333333");
+
       };
+
 
       $('.change-step').click(function() {
         var step = parseInt($(this).data('step')) + 1;
+        var stepSvg = $(this).find("svg").attr("class");
         backgroundReset();
 
         $(".guide .column-1:nth-child(" + step + ")").css("background-color", bgOn);
+        $(stepSvg).css("fill", "#ffffff");
+        $( this).children().css( "fill", "white" );
+        $( this).children().css( "color", "white" );
 
-        if (step == 4) {
-          $(this).addClass('step-active');
 
-        } else if (step == 5) {
+        if (step == 5) {
           $(".checkout-wrap").addClass('show');
           $('body').scrollTop(0);
         }

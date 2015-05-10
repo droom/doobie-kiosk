@@ -29,3 +29,8 @@ html {
 .column-5{
   width: 900px;
 }
+
+.steps .column-1{
+  margin: 5px 0 10px 0;
+
+}
