@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Virtual Keyboard Navigation Demo</title>
+  <link href="css/keyboard.css" rel="stylesheet" >
+  <link href="css/keyboard-override.css" rel="stylesheet" >
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/jquery.keyboard.min.js"></script>
+
+	<script>
+	$(function(){
+		$.extend($.keyboard.navigationKeys, {
+			toggle     : 112,
+			enter      : 13,
+			pageup     : 33,
+			pagedown   : 34,
+			end        : 35,
+			home       : 36,
+			left       : 37,
+			up         : 38,
+			right      : 39,
+			down       : 40,
+			caretrt    : 45,
+			caretlt    : 46,
+			caretrgt : function(kb){
+				$.keyboard.keyaction.right(kb);
+				kb.$preview.focus().caret( kb.last );
+			},
+			caretlft : function(kb){
+				$.keyboard.keyaction.left(kb);
+				kb.$preview.focus().caret( kb.last );
+			}
+		});
+
+		$('#info button').click(function(){
+			var $button = $(this),
+				action = $button.attr('data-action');
+			if (action === 'toggle') {
+				var toggleMode = $('textarea').data('keyboard').navigation_options.toggleMode;
+				$button.toggleClass('active', !toggleMode);
+			}
+			$('textarea').trigger('navigate', action);
+		});
+
+		$('#keyboard')
+			.keyboard({
+				alwaysOpen: true
+			})
+			.addNavigation({
+				position   : [0,0],
+				toggleMode : false,
+				focusClass : 'hasFocus'
+			});
+	});
+	</script>
+</head>
+
+<body>
+	<div id="wrap">
+		<textarea id="keyboard"></textarea>
+	</div>
+</body>
+</html>

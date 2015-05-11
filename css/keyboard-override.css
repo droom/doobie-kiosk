@@ -1,0 +1,53 @@
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header,
+.ui-state-default {
+  background: #4a4953;
+  border: none;
+  padding: 2px 22px;
+  color: #f2f2f2;
+}
+.ui-widget input,
+.ui-widget select,
+.ui-widget textarea,
+.ui-widget button {
+  border-radius: 0em;
+}
+.ui-keyboard-button{
+ height: auto;
+ font-size: 20px;
+}
+.ui-keyboard-button,
+.ui-state-active,
+.ui-state-hover{
+  border-top: 0px;
+  background: green;
+}
+.ui-keyboard-button.ui-state-active.ui-state-hover{
+  /*border: 1px !important;*/
+  /*box-shadow: 3px 3px 3px 3px !important;*/
+}
+.ui-keyboard-button:hover,
+.ui-keyboard-button:active{
+  color: #4a4953;
+  background: #f2f2f2;
+}
+.ui-keyboard-button,
+.ui-keyboard-shift,
+.ui-keyboard-widekey,
+.ui-keyboard-actionkey,
+.ui-state-default,
+.ui-corner-all,
+.ui-keyboard-hasactivestate,
+.ui-state-active{
+  background: #333333;
+}
+
+
+.ui-widget-content,
+.ui-corner-all,
+.ui-keyboard-preview{
+  font-size: 18px;
+  color: #f2f2f2;
+
+}
