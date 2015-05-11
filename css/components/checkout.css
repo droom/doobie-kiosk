@@ -24,18 +24,17 @@ section.checkout{
 }
 
 .checkout-close{
-  top: 50px;
+  top: 60px;
   right: 50px;
   position: absolute;
 }
 .checkout-wrap .checkout-close{
-  transform: rotate(90deg);
+  transform: rotate(-90deg);
   transition: 300ms all ease-out;
 }
 .checkout-wrap.show .checkout-close{
   transform: rotate(0deg);
 }
-
 .checkout .column-1,
 .checkout .column-2,
 .checkout .column-3{
@@ -66,18 +65,15 @@ td{
 td label{
   color: white;
 }
-
 td h1,
 td h2,
 td h3,
 td h4{
   color: white;
 }
-
 label + .field{
   padding-top: 10px;
 }
-
 .ui.form input:not([type]),
 .ui.form input[type=number],
 .ui.form input[type=text],

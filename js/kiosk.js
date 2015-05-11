@@ -11,20 +11,16 @@ $(document).ready(function() {
         $(".guide > .background-cell").css("background-color", bgOff);
         $(".svg-step").css("fill", "#333333");
         $(".copy-step").css("color", "#333333");
-
       };
 
 
       $('.change-step').click(function() {
         var step = parseInt($(this).data('step')) + 1;
-        var stepSvg = $(this).find("svg").attr("class");
         backgroundReset();
-
         $(".guide .column-1:nth-child(" + step + ")").css("background-color", bgOn);
-        $(stepSvg).css("fill", "#ffffff");
-        $( this).children().css( "fill", "white" );
-        $( this).children().css( "color", "white" );
 
+        $(this).children().css( "fill", "white" );
+        $(this).children().css( "color", "white" );
 
         if (step == 5) {
           $(".checkout-wrap").addClass('show');
@@ -37,18 +33,25 @@ $(document).ready(function() {
       });
 
       $('.ui.dropdown').dropdown();
+
       $('.help').click(function(){
+
         console.log($(this).data('help'));
         var helpme = $(this).data('help');
+
 
         if (helpme === false){
           console.log("Show tooltips");
           $(this).data('help', true);
+          $(this).children().css( "fill", "white" );
+
           $('.tooltips .column-1').addClass('show');
+
 
         } else{
           console.log("Hide tooltips");
           $(this).data('help', false);
+          $(this).children().css( "fill", "#333" );
 
           $('.tooltips .column-1').removeClass('show');
 

@@ -14,7 +14,6 @@ body{
  background: -o-linear-gradient(45deg,  #a093a8 0%,#9ebfcc 100%);
  background: -ms-linear-gradient(45deg,  #a093a8 0%,#9ebfcc 100%);
  background: linear-gradient(45deg,  #a093a8 0%,#9ebfcc 100%);
- filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a093a8', endColorstr='#9ebfcc',GradientType=1 );
 }
 header{
  height: 160px;
@@ -30,27 +29,25 @@ section.canvas{
   overflow: hidden;
 }
 section.continue{
-  margin: 0 auto;
+  position: absolute;
+  bottom: 50px;
+  left: 0;
+  width: 100%;
 }
-
 section.selector{
   overflow: hidden;
 }
-
 section.selector-active{
   background: blue;
   height: 200px;
   width: 200px;
 }
-
 section.selector + section.selector{
   margin-top: 20px;
 }
-
 section.steps{
   height: 160px;
 }
-
 section.controls{
   overflow: hidden;
   padding: 14px 0 ;
